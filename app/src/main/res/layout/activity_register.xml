@@ -9,13 +9,12 @@
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:orientation="vertical"
-        android:padding="24dp">
+        android:padding="24dp"
+        >
 
-        <View
-            android:layout_width="match_parent"
-            android:layout_height="40dp" />
 
         <TextView
+            android:layout_marginTop="40dp"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:text="Register"
@@ -113,7 +112,6 @@
                 android:padding="16dp"
                 android:textSize="16sp"
                 android:inputType="textEmailAddress" />
-
         </LinearLayout>
 
         <LinearLayout
@@ -170,7 +168,6 @@
 
         </LinearLayout>
 
-        <!-- Register Button -->
         <Button
             android:id="@+id/btnRegister"
             android:layout_width="match_parent"
@@ -218,7 +215,6 @@
 
         </LinearLayout>
 
-        <!-- Login Link -->
         <TextView
             android:id="@+id/tvLoginLink"
             android:layout_width="wrap_content"

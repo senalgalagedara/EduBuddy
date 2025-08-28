@@ -55,6 +55,7 @@
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
                         android:orientation="vertical"
+                        android:background="#fff"
                         android:padding="16dp"
                         android:gravity="center">
 
@@ -101,6 +102,7 @@
                     android:layout_marginStart="8dp">
 
                     <LinearLayout
+                        android:background="#fff"
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
                         android:orientation="vertical"
@@ -136,6 +138,7 @@
                 android:layout_marginBottom="32dp">
 
                 <LinearLayout
+                    android:background="#fff"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:orientation="vertical"
@@ -345,6 +348,7 @@
                 android:layout_marginBottom="32dp">
 
                 <LinearLayout
+                    android:background="#fff"
                     android:layout_width="match_parent"
                     android:layout_height="136dp"
                     android:orientation="horizontal"
@@ -402,11 +406,13 @@
                 android:orientation="horizontal">
 
                 <androidx.cardview.widget.CardView
+                    android:background="#fff"
                     android:layout_width="0dp"
                     android:layout_height="120dp"
                     android:layout_weight="1">
 
                     <LinearLayout
+                        android:background="#fff"
                         android:layout_width="match_parent"
                         android:layout_height="match_parent"
                         android:orientation="vertical"
@@ -438,6 +444,7 @@
                     android:layout_weight="1">
 
                     <LinearLayout
+                        android:background="#fff"
                         android:layout_width="match_parent"
                         android:layout_height="match_parent"
                         android:orientation="vertical"
@@ -470,6 +477,7 @@
                     android:layout_weight="1">
 
                     <LinearLayout
+                        android:background="#fff"
                         android:layout_width="match_parent"
                         android:layout_height="match_parent"
                         android:orientation="vertical"

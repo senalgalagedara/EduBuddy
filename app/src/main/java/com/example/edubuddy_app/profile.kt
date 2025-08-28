@@ -53,13 +53,13 @@ class ProfileActivity : AppCompatActivity() {
         }
 
         btnLogOut.setOnClickListener {
-            val intent = Intent(this, OnboardScreen1Activity::class.java)
+            val intent = Intent(this, LoginActivity::class.java)
             startActivity(intent)
             finish()
         }
 
         btnDeleteAccount.setOnClickListener {
-            val intent = Intent(this, OnboardScreen1Activity::class.java)
+            val intent = Intent(this, RegisterActivity::class.java)
             startActivity(intent)
             finish()
         }
@@ -127,24 +127,20 @@ class ProfileActivity : AppCompatActivity() {
     private fun navigateToHome() {
         val intent = Intent(this, HomeActivity::class.java)
         startActivity(intent)
-        overridePendingTransition(R.transition.side_in_left, R.transition.side_out_right)
     }
 
     private fun navigateToLessons() {
         val intent = Intent(this, LessonsActivity::class.java)
         startActivity(intent)
-        overridePendingTransition(R.transition.side_in_left, R.transition.side_out_right)
     }
 
     private fun navigateToFocus() {
         val intent = Intent(this, FocusActivity::class.java)
         startActivity(intent)
-        overridePendingTransition(R.transition.side_in_left, R.transition.side_out_right)
     }
 
     private fun navigateToTodo() {
         val intent = Intent(this, TodoActivity::class.java)
         startActivity(intent)
-        overridePendingTransition(R.transition.side_in_left, R.transition.side_out_right)
     }
 }

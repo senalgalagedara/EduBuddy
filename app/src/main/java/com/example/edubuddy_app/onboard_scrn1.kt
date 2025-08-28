@@ -6,7 +6,6 @@ import android.widget.Button
 import android.widget.TextView
 import androidx.appcompat.app.AppCompatActivity
 
-
 class OnboardScreen1Activity : AppCompatActivity() {
 
     private lateinit var btnNext: Button
@@ -38,7 +37,6 @@ class OnboardScreen1Activity : AppCompatActivity() {
     private fun navigateToScreen2() {
         val intent = Intent(this, OnboardScreen2Activity::class.java)
         startActivity(intent)
-        overridePendingTransition(R.transition.side_in_right, R.transition.side_out_left)
     }
 
     private fun navigateToRegister() {

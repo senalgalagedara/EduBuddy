@@ -15,7 +15,7 @@ class FocusActivity : AppCompatActivity() {
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
-        setContentView(R.layout.activity_focus) // load your XML layout
+        setContentView(R.layout.activity_focus)
 
         initViews()
         setupClickListeners()
@@ -43,7 +43,6 @@ class FocusActivity : AppCompatActivity() {
         }
 
         navFocus.setOnClickListener {
-            // Already in FocusActivity → do nothing
         }
 
         navTodoList.setOnClickListener {
@@ -58,24 +57,20 @@ class FocusActivity : AppCompatActivity() {
     private fun navigateToHome() {
         val intent = Intent(this, HomeActivity::class.java)
         startActivity(intent)
-        overridePendingTransition(R.transition.side_in_left, R.transition.side_out_right)
     }
 
     private fun navigateToLessons() {
         val intent = Intent(this, LessonsActivity::class.java)
         startActivity(intent)
-        overridePendingTransition(R.transition.side_in_left, R.transition.side_out_right)
     }
 
     private fun navigateToTodo() {
         val intent = Intent(this, TodoActivity::class.java)
         startActivity(intent)
-        overridePendingTransition(R.transition.side_in_right, R.transition.side_out_left)
     }
 
     private fun navigateToProfile() {
         val intent = Intent(this, ProfileActivity::class.java)
         startActivity(intent)
-        overridePendingTransition(R.transition.side_in_right, R.transition.side_out_left)
     }
 }

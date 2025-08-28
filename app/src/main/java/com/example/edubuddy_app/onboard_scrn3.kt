@@ -37,12 +37,10 @@ class OnboardScreen3Activity : AppCompatActivity() {
     private fun navigateToRegister() {
         val intent = Intent(this, RegisterActivity::class.java)
         startActivity(intent)
-        overridePendingTransition(R.transition.side_in_right, R.transition.side_out_left)
     }
 
     private fun navigateToLogin() {
         val intent = Intent(this, LoginActivity::class.java)
         startActivity(intent)
-        overridePendingTransition(R.transition.side_in_right, R.transition.side_out_left)
     }
 }

@@ -9,9 +9,7 @@ import androidx.appcompat.app.AppCompatActivity
 
 class TodoActivity : AppCompatActivity() {
 
-    private lateinit var taskContainer: LinearLayout
-    private lateinit var etNewTask: EditText
-    private lateinit var btnAddTask: Button
+
     private lateinit var navHome: LinearLayout
     private lateinit var navLessons: LinearLayout
     private lateinit var navFocus: LinearLayout
@@ -27,9 +25,7 @@ class TodoActivity : AppCompatActivity() {
     }
 
     private fun initViews() {
-        taskContainer = findViewById(R.id.taskContainer)
-        etNewTask = findViewById(R.id.etNewTask)
-        btnAddTask = findViewById(R.id.btnAddTask)
+
         navHome = findViewById(R.id.navHome)
         navLessons = findViewById(R.id.navLessons)
         navFocus = findViewById(R.id.navFocus)
@@ -62,24 +58,20 @@ class TodoActivity : AppCompatActivity() {
     private fun navigateToHome() {
         val intent = Intent(this, HomeActivity::class.java)
         startActivity(intent)
-        overridePendingTransition(R.transition.side_in_left, R.transition.side_out_right)
     }
 
     private fun navigateToLessons() {
         val intent = Intent(this, LessonsActivity::class.java)
         startActivity(intent)
-        overridePendingTransition(R.transition.side_in_left, R.transition.side_out_right)
     }
 
     private fun navigateToFocus() {
         val intent = Intent(this, FocusActivity::class.java)
         startActivity(intent)
-        overridePendingTransition(R.transition.side_in_left, R.transition.side_out_right)
     }
 
     private fun navigateToProfile() {
         val intent = Intent(this, ProfileActivity::class.java)
         startActivity(intent)
-        overridePendingTransition(R.transition.side_in_right, R.transition.side_out_left)
     }
 }

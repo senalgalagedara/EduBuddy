@@ -263,7 +263,6 @@
 
                 </androidx.cardview.widget.CardView>
 
-                <!-- Trigonometry -->
                 <androidx.cardview.widget.CardView
                     android:layout_width="0dp"
                     android:layout_height="120dp"
@@ -305,7 +304,6 @@
 
     </ScrollView>
 
-    <!-- Bottom Navigation -->
     <include layout="@layout/bottom_navigation" />
 
 </LinearLayout>

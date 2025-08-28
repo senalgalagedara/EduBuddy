@@ -18,7 +18,6 @@ class HomeActivity : AppCompatActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_home)
-
         initViews()
         setupClickListeners()
     }
@@ -41,7 +40,6 @@ class HomeActivity : AppCompatActivity() {
 
     private fun setupBottomNavigation() {
         navHome.setOnClickListener {
-            // Already on Home → do nothing
         }
 
         navLessons.setOnClickListener {
@@ -64,24 +62,20 @@ class HomeActivity : AppCompatActivity() {
     private fun navigateToLessons() {
         val intent = Intent(this, LessonsActivity::class.java)
         startActivity(intent)
-        overridePendingTransition(R.transition.side_in_left, R.transition.side_out_right)
     }
 
     private fun navigateToFocus() {
         val intent = Intent(this, FocusActivity::class.java)
         startActivity(intent)
-        overridePendingTransition(R.transition.side_in_left, R.transition.side_out_right)
     }
 
     private fun navigateToTodo() {
         val intent = Intent(this, TodoActivity::class.java)
         startActivity(intent)
-        overridePendingTransition(R.transition.side_in_left, R.transition.side_out_right)
     }
 
     private fun navigateToProfile() {
         val intent = Intent(this, ProfileActivity::class.java)
         startActivity(intent)
-        overridePendingTransition(R.transition.side_in_left, R.transition.side_out_right)
     }
 }

@@ -18,7 +18,6 @@ class OnboardScreen2Activity : AppCompatActivity() {
         initViews()
         setupClickListeners()
     }
-
     private fun initViews() {
         btnNext = findViewById(R.id.btnNext)
         btnSkip = findViewById(R.id.btnSkip)
@@ -37,7 +36,6 @@ class OnboardScreen2Activity : AppCompatActivity() {
     private fun navigateToScreen3() {
         val intent = Intent(this, OnboardScreen3Activity::class.java)
         startActivity(intent)
-        overridePendingTransition(R.transition.side_in_right, R.transition.side_out_left)
     }
 
     private fun navigateToRegister() {
