@@ -39,7 +39,7 @@
         <TextView
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:text="  Learn with interactive lessons and test your knowledge with quizzes."
+            android:text=" Learn with interactive lessons and test your knowledge with quizzes."
             android:textSize="16sp"
             android:textColor="@color/text_secondary"
             android:textAlignment="center"

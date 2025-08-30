@@ -49,7 +49,6 @@ class ProfileActivity : AppCompatActivity() {
         }
 
         btnBadges.setOnClickListener {
-            showBadges()
         }
 
         btnLogOut.setOnClickListener {
@@ -93,15 +92,7 @@ class ProfileActivity : AppCompatActivity() {
         btnBadges.setTextColor(resources.getColor(R.color.text_secondary, null))
     }
 
-    private fun showBadges() {
-        settingsContent.visibility = LinearLayout.GONE
-        badgesContent.visibility = LinearLayout.VISIBLE
 
-        btnBadges.setBackgroundResource(R.drawable.toggle_active_background)
-        btnBadges.setTextColor(resources.getColor(R.color.text_white, null))
-        btnSettings.setBackgroundResource(R.drawable.toggle_inactive_background)
-        btnSettings.setTextColor(resources.getColor(R.color.text_secondary, null))
-    }
 
     private fun setupBottomNavigation() {
         navHome.setOnClickListener {

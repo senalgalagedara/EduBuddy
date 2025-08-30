@@ -58,7 +58,6 @@
 
     </LinearLayout>
 
-    <!-- Focus -->
     <LinearLayout
         android:id="@+id/navFocus"
         android:layout_width="0dp"
